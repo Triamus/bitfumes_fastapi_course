@@ -33,7 +33,7 @@ def update(id: int, request: schemas.Blog, db: Session):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
                             detail=f"Blog with id {id} not found")
 
-    blog.update(request)
+    blog.update(vars(request))
     db.commit()
     return 'updated'
 

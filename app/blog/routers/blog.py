@@ -1,9 +1,9 @@
-from app.blog.oauth2 import get_current_user
+from blog.oauth2 import get_current_user
 from typing import List
 from fastapi import APIRouter, Depends, status, HTTPException
-from app.blog import schemas, database, models, oauth2
+from blog import schemas, database, models, oauth2
 from sqlalchemy.orm import Session
-from app.blog.repository import blog
+from blog.repository import blog
 
 router = APIRouter(
     prefix = "/blog",

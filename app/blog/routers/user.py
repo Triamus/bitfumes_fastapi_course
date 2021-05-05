@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
-from app.blog import schemas, database, models
+from blog import schemas, database, models
 from sqlalchemy.orm import Session
-from app.blog.repository import user
+from blog.repository import user
 
 
 router = APIRouter(
