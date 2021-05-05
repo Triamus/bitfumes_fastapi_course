@@ -1,0 +1,22 @@
+curl -X 'POST' \
+  'http://127.0.0.1:8000/blog/' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGV4QGdtYWlsLmNvbSIsImV4cCI6MTYyMDE5MjM0NX0.GukxyFxQh_cW0nqQRppmxrp3cJwSP9yoq657JTUFvWw' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "title": "title2",
+  "body": "body2"
+}'
+
+
+###
+
+curl -X 'POST' \
+  'http://127.0.0.1:8000/blog/' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGV4MkBnbWFpbC5jb20iLCJleHAiOjE2MjAxOTI4OTR9.QisIMJTuP7SHyKxocfPAMg7mtr5XLRhmQHzTIn9Rjuw' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "title": "title3",
+  "body": "body3"
+}'

@@ -1,0 +1,9 @@
+curl -X 'PUT' \
+  'http://127.0.0.1:8000/blog/1' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGV4QGdtYWlsLmNvbSIsImV4cCI6MTYyMDE5NDMxMH0.LtVoHHf7JBAIsxLioGiVXUdDtSj_ZTTSvgZiWSNMXvg' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "title": "updateTitle1",
+  "body": "updateBody1"
+}'

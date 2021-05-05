@@ -1,0 +1,16 @@
+
+curl -X 'POST' \
+  'http://127.0.0.1:8000/login' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d 'grant_type=&username=alex%40gmail.com&password=mypw&scope=&client_id=&client_secret='
+
+
+###
+
+
+curl -X 'POST' \
+  'http://127.0.0.1:8000/login' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d 'grant_type=&username=alex2%40gmail.com&password=mypw&scope=&client_id=&client_secret='
